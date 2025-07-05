@@ -1,4 +1,4 @@
-Task 2 HTML                                                                                                                                                                                              <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -11,33 +11,18 @@ Task 2 HTML                                                                     
   <!-- Category Selector -->
   <label for="categorySelect">Select Category:</label>
   <select id="categorySelect"></select>
-<div>
-  <select id="categoryFilter" onchange="filterQuotes()">
-    <option value="all">All Categories</option>
-  </select>
-</div>
 
   <!-- Quote Display -->
   <div id="quoteDisplay" style="margin: 20px 0; font-style: italic;"></div>
   <button id="newQuote">Show New Quote</button>
-<div id="quoteDisplay"></div>
 
   <!-- Add New Quote Form -->
   <h2>Add a New Quote</h2>
-<button id="newQuote">Show New Quote</button>
-
-<div>
   <input id="newQuoteText" type="text" placeholder="Enter a new quote" />
   <input id="newQuoteCategory" type="text" placeholder="Enter quote category" />
-  <button onclick="addQuote()">Add Quote</button>
-</div>
-
-<div>
   <input type="file" id="importFile" accept=".json" onchange="importFromJsonFile(event)" />
   <button id="addQuoteBtn">Add Quote</button>
   <button onclick="exportToJsonFile()">Export Quotes</button>
-</div>
 
   <script src="script.js"></script>
 </body>
-</html>
